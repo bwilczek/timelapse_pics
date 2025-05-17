@@ -20,6 +20,8 @@ profile = Selenium::WebDriver::Firefox::Profile.new
 # Set preferences for auto-downloading PNG files
 profile['browser.download.folderList'] = 2 # Use custom download path
 profile['browser.download.dir'] = download_dir
+profile['browser.download.useDownloadDir'] = true
+profile['browser.download.manager.showWhenStarting'] = false
 profile['browser.helperApps.neverAsk.saveToDisk'] = 'image/png'
 profile['pdfjs.disabled'] = true # Disable PDF viewer if needed
 
